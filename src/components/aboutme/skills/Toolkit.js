@@ -4,7 +4,7 @@ import vs from "../../../images/Vs.png";
 import pc from "../../../images/pc.png";
 import git from "../../../images/git.png";
 import github from "../../../images/github.png";
-import cb from "../../../images/cb.png";
+import amazon from "../../../images/amazon.png";
 import pg from "../../../images/pg.png";
 import pm from "../../../images/pm.png";
 import chrome from "../../../images/chorme.svg";
@@ -51,7 +51,7 @@ export default function Toolkit() {
             />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
-            <img src={cb} alt="" style={{ width: "95%", height: "95%" }} />
+            <img src={amazon} alt="" style={{ width: "95%", height: "95%" }} />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
             <img src={pg} alt="" style={{ width: "95%", height: "95%" }} />

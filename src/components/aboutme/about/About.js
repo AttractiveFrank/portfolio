@@ -28,36 +28,26 @@ const About = () => {
           <Col md={7}>
             <Fade duration={3000}>
               <p className="home-about-body">
-                My name is <b className="purple">MD Mafujul Hasan </b> 
-                  and I am a <b className="purple">Computer Science and Engineering </b> 
-                    student at <b className="purple">Sonargaon University </b>
-                      in Dhaka, Bangladesh.
+                My name is <b className="purple">Sobirjon Mo'minov. </b>
                 <br />
                 <br />
-                        I am proficient in various programming languages such as &nbsp;
-                  <b className="purple">
-                    {" "}
-                    C, C++, Java, Python, HTML, CSS, PHP, and JavaScript.{" "}
-                  </b>
+                Highly skilled Senior{" "}
+                <b className="purple">Full-stack Developer</b> with over 6 years
+                of experience in designing and developing responsive and
+                user-centric web applications.
                 <br />
                 <br />
-                I also have experience working with frameworks and libraries such as &nbsp;
-
-                  <b className="purple">
-                    {" "}
-                    NodeJS, ReactJS, OpenCV, Pandas, and NumPy.{" "}
-                  </b>
+                Proficient in leveraging modern front-end technologies such as
+                <b className="purple"> React.js, NextJS and Vue.js</b> to
+                create seamless and interactive user experiences.
                 <br />
                 <br />
-                Whenever possible, I also apply my passion for developing
-                products with &nbsp;
-                  <b className="purple">
-                    {" "}
-                    Modern Javascript Library and Frameworks.
-                  </b>
+                Demonstrated ability to manage projects and deliver high quality
+                code. <br />
                 <br />
-                <br />In my free time, I enjoy learning new technologies and &nbsp;
-                  <b className="purple">building new web technologies and products. </b>
+                Passionate about optimizing web performance, enhancing user
+                experience, and staying updated with the latest industry trends
+                and technologies.
               </p>
             </Fade>
           </Col>

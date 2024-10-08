@@ -48,7 +48,7 @@ export default function TechnicalSkill() {
                     fontWeight: 700,
                   }}
                 >
-                  C
+                  HTML
                 </h2>
               </div>
             </Col>
@@ -77,39 +77,11 @@ export default function TechnicalSkill() {
                     fontWeight: 700,
                   }}
                 >
-                  C++
+                  CSS
                 </h2>
               </div>
             </Col>
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#39c4ff", fontWeight: 700 }}
-              >
-                80%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"cr"}
-                    aria-valuenow={"90"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "90%" }}
-                  ></div>
-                </div>
-                <h2
-                  style={{
-                    color: "#39c4ff",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
-                  }}
-                >
-                  Python
-                </h2>
-              </div>
-            </Col>
+
             <Col md={4}>
               <h1
                 style={{ fontSize: "100px", color: "#f1f965", fontWeight: 700 }}
@@ -141,9 +113,67 @@ export default function TechnicalSkill() {
             </Col>
             <Col md={4}>
               <h1
+                style={{ fontSize: "100px", color: "#41f2ff", fontWeight: 700 }}
+              >
+                85%
+              </h1>
+              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
+                <div class="progress">
+                  <div
+                    role={"progressbar"}
+                    id={"react"}
+                    aria-valuenow={"86"}
+                    aria-valuemin={"0"}
+                    aria-valuemax={"100"}
+                    style={{ width: "86%" }}
+                  ></div>
+                </div>
+                <h2
+                  style={{
+                    color: "#41f2ff",
+                    fontSize: "25px",
+                    marginTop: "13px",
+                    fontWeight: 700,
+                  }}
+                >
+                  React js
+                </h2>
+              </div>
+            </Col>
+            <Col md={4}>
+              <h1
+                style={{ fontSize: "100px", color: "#f1f965", fontWeight: 700 }}
+              >
+                80%
+              </h1>
+              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
+                <div class="progress">
+                  <div
+                    role={"progressbar"}
+                    id={"aa"}
+                    aria-valuenow={"81"}
+                    aria-valuemin={"0"}
+                    aria-valuemax={"100"}
+                    style={{ width: "81%" }}
+                  ></div>
+                </div>
+                <h2
+                  style={{
+                    color: "#f1f965",
+                    fontSize: "25px",
+                    marginTop: "13px",
+                    fontWeight: 700,
+                  }}
+                >
+                  Vue
+                </h2>
+              </div>
+            </Col>
+            <Col md={4}>
+              <h1
                 style={{ fontSize: "100px", color: "#ff0173", fontWeight: 700 }}
               >
-                68%
+                75%
               </h1>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
@@ -172,7 +202,7 @@ export default function TechnicalSkill() {
               <h1
                 style={{ fontSize: "100px", color: "#ff8c2f", fontWeight: 700 }}
               >
-                66%
+                80%
               </h1>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
@@ -197,35 +227,7 @@ export default function TechnicalSkill() {
                 </h2>
               </div>
             </Col>
-            <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#41f2ff", fontWeight: 700 }}
-              >
-                78%
-              </h1>
-              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
-                <div class="progress">
-                  <div
-                    role={"progressbar"}
-                    id={"react"}
-                    aria-valuenow={"86"}
-                    aria-valuemin={"0"}
-                    aria-valuemax={"100"}
-                    style={{ width: "86%" }}
-                  ></div>
-                </div>
-                <h2
-                  style={{
-                    color: "#41f2ff",
-                    fontSize: "25px",
-                    marginTop: "13px",
-                    fontWeight: 700,
-                  }}
-                >
-                  React js
-                </h2>
-              </div>
-            </Col>
+
             <Col md={4}>
               <h1
                 style={{ fontSize: "100px", color: "#fe3e57", fontWeight: 700 }}
@@ -257,9 +259,67 @@ export default function TechnicalSkill() {
             </Col>
             <Col md={4}>
               <h1
+                style={{ fontSize: "100px", color: "#ff8c2f", fontWeight: 700 }}
+              >
+                77%
+              </h1>
+              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
+                <div class="progress">
+                  <div
+                    role={"progressbar"}
+                    id={"ps"}
+                    aria-valuenow={"86"}
+                    aria-valuemin={"0"}
+                    aria-valuemax={"100"}
+                    style={{ width: "86%" }}
+                  ></div>
+                </div>
+                <h2
+                  style={{
+                    color: "#ff8c2f",
+                    fontSize: "25px",
+                    marginTop: "13px",
+                    fontWeight: 700,
+                  }}
+                >
+                  Laravel
+                </h2>
+              </div>
+            </Col>
+            <Col md={4}>
+              <h1
+                style={{ fontSize: "100px", color: "#39c4ff", fontWeight: 700 }}
+              >
+                87%
+              </h1>
+              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
+                <div class="progress">
+                  <div
+                    role={"progressbar"}
+                    id={"cr"}
+                    aria-valuenow={"90"}
+                    aria-valuemin={"0"}
+                    aria-valuemax={"100"}
+                    style={{ width: "90%" }}
+                  ></div>
+                </div>
+                <h2
+                  style={{
+                    color: "#39c4ff",
+                    fontSize: "25px",
+                    marginTop: "13px",
+                    fontWeight: 700,
+                  }}
+                >
+                  MongoDB
+                </h2>
+              </div>
+            </Col>
+            <Col md={4}>
+              <h1
                 style={{ fontSize: "100px", color: "#54faae", fontWeight: 700 }}
               >
-                75%
+                83%
               </h1>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
@@ -280,9 +340,16 @@ export default function TechnicalSkill() {
                     fontWeight: 700,
                   }}
                 >
-                  JAVA
+                  RESTful APIs
                 </h2>
               </div>
+            </Col>
+            <Col md={4}>
+              <h1
+                style={{ fontSize: "100px", color: "#54faae", fontWeight: 700 }}
+              >
+                ...
+              </h1>
             </Col>
           </Row>
         </Container>

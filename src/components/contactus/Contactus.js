@@ -1,42 +1,54 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
-import axios from "axios";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { AiOutlineSend } from "react-icons/ai";
 import { FiPhone, FiAtSign } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import emailjs from "emailjs-com";
 
 export default function Contactus() {
-  const [formData, setFormData] = useState(new FormData());
+  const formRef = useRef();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!(formData.name && formData.email && formData.message)) {
-      alert("Something went wrong!");
-      return;
-    }
-
-    try {
-      const response = await axios.post(
-        "http://localhost:5000/api/submitForm",
-        formData
+    emailjs
+      .sendForm(
+        // "service_odmiegc",
+        // "template_3ldlmje",
+        formRef.current,
+        // "J-8-4a6ZskofBR4g6"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Email sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Error sending email:" + error.text);
+        }
       );
-      console.log(response.data.message); // Log the response from the backend
 
-      alert(`Thanks ${formData.name}, I will shortly connect with you!`);
-    } catch (error) {
-      console.error("Error submitting the form:", error);
-
-      alert("Backend Server was not Running while submitting the form.");
-    }
-
-    setFormData({});
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
@@ -56,7 +68,7 @@ export default function Contactus() {
               <Row>
                 <Col md={4}>
                   <div className="contacts-form" data-aos="fade-up">
-                    <form>
+                    <form ref={formRef} onSubmit={handleSubmit}>
                       <div className="input-container d-flex flex-column">
                         <label htmlFor="username" className="label-class">
                           Full Name
@@ -103,11 +115,7 @@ export default function Contactus() {
                       </div>
 
                       <div className="submit-btn">
-                        <button
-                          type="submit"
-                          className="submitBtn"
-                          onClick={handleSubmit}
-                        >
+                        <button type="submit" className="submitBtn">
                           Submit
                           <AiOutlineSend className="send-icon" />
                         </button>
@@ -125,7 +133,7 @@ export default function Contactus() {
                         <FiAtSign />
                       </div>
                       <p style={{ color: "#fbd9ad" }}>
-                        mdtonmoy13.mt@gmail.com
+                        msobirjon394@gmail.com
                       </p>
                     </a>
                     <a
@@ -135,7 +143,7 @@ export default function Contactus() {
                       <div className="detailsIcon">
                         <FiPhone />
                       </div>
-                      <p style={{ color: "#fbd9ad" }}>+880 1603-550521</p>
+                      <p style={{ color: "#fbd9ad" }}>+998 (93) 980-53-07</p>
                     </a>
                     <a
                       href="https://maps.app.goo.gl/iUHJvPAhJXwJayo68"
@@ -146,24 +154,22 @@ export default function Contactus() {
                           <HiOutlineLocationMarker />
                         </div>
                         <p style={{ color: "#fbd9ad" }}>
-                          BOF R/A, Gazipur Cantonment, BOF-1703, Dhaka,
-                          Bangladesh.
+                          Obikanda neighborhood, Kitab district, Kashkadarya region.
                         </p>
                       </div>
                     </a>
                   </div>
                   <div className="contact-map">
-                    <iframe
-                      // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.833618785371!2d90.41265112695315!3d24.036931700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db9832166e63%3A0x96050e560e6dc4fa!2sBOF%20Central%20Mosque!5e0!3m2!1sen!2sbd!4v1695023265917!5m2!1sen!2sbd"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.120225147177!2d-81.2127223847447!3d28.58309218243243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e768f2c5e6b12f%3A0x17d51bd7ae2ef245!2s4652%20Pacifica%20Dr%2C%20Orlando%2C%20FL%2032817%2C%20USA!5e0!3m2!1sen!2sus!4v1696178405942!5m2!1sen!2sus"
-                      frameBorder="0"
-                      allowFullScreen=""
-                      aria-hidden="false"
-                      title="Contact Me"
-                      tabIndex="0"
-                      loading="lazy"
-                      className=""
-                    ></iframe>
+                      <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123456.789!2d66.123456!3d39.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef:0x1234567890abcdef!2sObikanda!5e0!3m2!1sen!2sus!4v1234567890123"
+                          frameBorder="0"
+                          allowFullScreen=""
+                          aria-hidden="false"
+                          title="My Address"
+                          tabIndex="0"
+                          loading="lazy"
+                          style={{ width: '100%', height: '400px' }}
+                      ></iframe>
                   </div>
                 </Col>
               </Row>

@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  AiOutlineInstagram,
-  AiFillFacebook,
-  AiFillGithub,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { FaTelegramPlane, FaDiscord } from "react-icons/fa";
 import { Container, Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
@@ -19,31 +15,31 @@ export default function SocialMedia() {
         <Row className="g-5">
           <Col md={3}>
             <a
-              href="https://www.instagram.com/_md_mafujul_hasan_/"
+              href="https://telegram.org"
               target="_blank"
               rel="noreferrer"
               className="icon-colour  home-social-icons"
             >
               <Zoom cascade>
-                <AiOutlineInstagram />
+                <FaTelegramPlane />
               </Zoom>
             </a>
           </Col>
           <Col md={3}>
             <a
-              href="https://www.facebook.com/mh.tonmoy.13"
+              href="https://discord.com"
               target="_blank"
               rel="noreferrer"
               className="icon-colour  home-social-icons"
             >
               <Zoom cascade>
-                <AiFillFacebook />
+                <FaDiscord />
               </Zoom>
             </a>
           </Col>
           <Col md={3}>
             <a
-              href="https://github.com/MD-MAFUJUL-HASAN"
+              href="https://github.com/Sobirjon913/"
               target="_blank"
               rel="noreferrer"
               className="icon-colour  home-social-icons"
@@ -55,7 +51,7 @@ export default function SocialMedia() {
           </Col>
           <Col md={3}>
             <a
-              href="https://www.linkedin.com/in/md-mafujul-hasan/"
+              href="https://www.linkedin.com/in/sobirjon-mo-minov-971073331/"
               target="_blank"
               rel="noreferrer"
               className="icon-colour  home-social-icons"

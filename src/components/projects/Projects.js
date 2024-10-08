@@ -2,11 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import nyc from "../../images/nyc.png";
-import ci from "../../images/onboarding.png";
-import hd from "../../images/hd.png";
-import pp from "../../images/portfolio.png";
-import { FaCode } from "react-icons/fa";
+import project1 from "../../images/project1.png";
+import project2 from "../../images/project2.png";
+import project3 from "../../images/project3.png";
+import project4 from "../../images/project4.png";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 
@@ -36,24 +35,16 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      New Year CountDown
+                      The Platform for Powering Brand Stories
                     </h5>
-                    <img src={nyc} alt={nyc} />
+                    <img src={project1} alt={project1} />
                     <div className="project--showcaseBtn">
                       <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Web_Programming/tree/main/New-Year-Countdown"
-                        }
-                        target="_blank"
+                        href="https://www.fabulate.com.au/ "
                         rel="noreferrer"
-                        className={"iconBtn"}
-                        aria-labelledby={`code`}
+                        target="_blank"
                       >
-                        <FaCode
-                          id={`code`}
-                          className={"icon"}
-                          aria-label="Code"
-                        />
+                        See the DEMO
                       </a>
                     </div>
                   </div>
@@ -66,24 +57,11 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      The New Year Countdown Project is more than just a
-                      celebration; it's a testament to the human spirit and our
-                      shared aspirations for a brighter future. So, mark your
-                      calendars and get ready to be part of this global
-                      extravaganza as we count down to a new year filled with
-                      endless possibilities.
+                      Effortlessly manage your creator marketing campaigns with
+                      powerful tools, perfect for brands, PR, and media
+                      agencies.
                     </p>
                   </h6>
-                  <div
-                    className="project--lang"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                      fontWeight: 600,
-                    }}
-                  >
-                    HTML, CSS, JavaScript
-                  </div>
                 </div>
               </Fade>
             </Col>
@@ -99,24 +77,16 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Heart Disease Prediction
+                      GPS Tracking Software for Resellers and Businesses
                     </h5>
-                    <img src={hd} alt={hd} />
+                    <img src={project2} alt={project2} />
                     <div className="project--showcaseBtn">
                       <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Machine_Learning/tree/main/Heart%20Disease%20Prediction"
-                        }
+                        href="https://www.gpsfan.ma/ "
                         target="_blank"
                         rel="noreferrer"
-                        className={"iconBtn"}
-                        aria-labelledby={`code`}
                       >
-                        <FaCode
-                          id={`code`}
-                          className={"icon"}
-                          aria-label="Code"
-                        />
+                        See the DEMO
                       </a>
                     </div>
                   </div>
@@ -129,23 +99,13 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      Use of AI and Machine Learning: Artificial intelligence
-                      and machine learning are already being used in healthcare
-                      to help predict heart disease. In the future, these
-                      technologies could become more advanced, enabling more
-                      accurate predictions of heart disease risk.
+                      GPS Tracking Software for Resellers and Businesses to
+                      provide your customers with a trusted solution? Do you
+                      want to benefit from an efficient system? GPSFAN offers
+                      you a wide range of top-quality services at excellent
+                      value for money.
                     </p>
                   </h6>
-                  <div
-                    className="project--lang"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                      fontWeight: 600,
-                    }}
-                  >
-                    Pandas, Matplotlib, Scikit-Learn
-                  </div>
                 </div>
               </Fade>
             </Col>
@@ -161,24 +121,16 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Online Payroll Management System
+                      Best Hotel WebSite
                     </h5>
-                    <img src={ci} alt={ci} />
+                    <img src={project3} alt={project3} />
                     <div className="project--showcaseBtn">
                       <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Online-Payroll-Management-System"
-                        }
+                        href="https://www.agoodday.me/en/ "
                         target="_blank"
                         rel="noreferrer"
-                        className={"iconBtn"}
-                        aria-labelledby={`code`}
                       >
-                        <FaCode
-                          id={`code`}
-                          className={"icon"}
-                          aria-label="Code"
-                        />
+                        See the DEMO
                       </a>
                     </div>
                   </div>
@@ -191,23 +143,10 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      A Payroll management System with feature like generate
-                      payslip & reports. It manages salaries, leaves, branches,
-                      employees, designations, shifts, holidays and employee
-                      attendance. It has chat application so internal employees
-                      can use that feature.
+                      Agoodday is on of the finest hotel website which provides
+                      you best hotel and many other useful information.
                     </p>
                   </h6>
-                  <div
-                    className="project--lang"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                      fontWeight: 600,
-                    }}
-                  >
-                    CSS, JavaScript, PHP, SCSS
-                  </div>
                 </div>
               </Fade>
             </Col>
@@ -223,24 +162,16 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Personal Portfolio
+                      Social classified ads platform
                     </h5>
-                    <img src={pp} alt={pp} />
+                    <img src={project4} alt={project4} />
                     <div className="project--showcaseBtn">
                       <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Personal-Portfolio"
-                        }
+                        href="https://www.sellik.com/"
                         target="_blank"
                         rel="noreferrer"
-                        className={"iconBtn"}
-                        aria-labelledby={`code`}
                       >
-                        <FaCode
-                          id={`code`}
-                          className={"icon"}
-                          aria-label="Code"
-                        />
+                        See the DEMO
                       </a>
                     </div>
                   </div>
@@ -253,21 +184,11 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      Welcome to my personal portfolio. Explore my work, skills,
-                      and achievements in a concise and visually appealing
-                      format. Get a glimpse of my expertise and creativity.
+                      Sellik is a simplified and interactive social classified
+                      ads platform for mobile and web applications, where users
+                      can buy from, sell to and chat with others worldwide.
                     </p>
                   </h6>
-                  <div
-                    className="project--lang"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                      fontWeight: 600,
-                    }}
-                  >
-                    HTML, CSS, SCSS, React, JavaScript
-                  </div>
                 </div>
               </Fade>
             </Col>
