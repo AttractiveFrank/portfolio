@@ -24,7 +24,7 @@ export default function Home() {
                   style={{ paddingBottom: 15, fontSize: "175px" }}
                   className="heading"
                 >
-                  Hi There!{" "}<h4>123</h4>
+                  Hi There!{" "}
                   <span className="wave" role="img" aria-labelledby="wave">
                     👋🏻
                   </span>
